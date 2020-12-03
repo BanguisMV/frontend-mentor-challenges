@@ -5,9 +5,28 @@
   --testimonial-bg:#202a3c;
   --accent-cyan: #65e2d9 ;
   --accent-blue: #339ecc ;
-  --accent-light:  #ff4242;
   --white: #ffffff;
   --gray:#c2c2c2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-cyan);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
 }
 
 h1, h2, h3, h5, h6, p, a, li {
