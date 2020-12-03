@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <title>Insure Landing Page</title>
+</head>
+
+<body>
+
+    <!-------------------------------------------------------------------------------->
+
+    <nav>
+        <img src="./images/logo.svg" alt="Logo" />
+        <ul id="ul" class="ul-desktop">
+            <li> <a href="#"> HOW WE WORK </a> </li>
+            <li> <a href="#"> BLOG </a> </li>
+            <li> <a href="#"> ACCOUNT </a> </li>
+            <li> <a href="#" class="plans"> VIEW PLANS </a> </li>
+        </ul>
+        <span class="nav_toggle" id="toggle" onclick="navToggle()"> &#x2630; </span>
+    </nav>
+
+    <main>
+        <!-------------------------------------------------------------------------------->
+
+        <section class="cover">
+
+
+            <img src="./images/bg-pattern-intro-left-desktop.svg " alt="" class="pattern left" />
+            <img src="./images/bg-pattern-intro-right-desktop.svg " alt="" class="pattern right" />
+
+            <div class="container cover_container ">
+
+                <div class=" message ">
+                    <span></span>
+                    <h1> Humanizing <br> your insurance. </h1>
+                    <p>
+                        Get your life insurance coverage easier and faster. We blend our expertise
+                        and technology to thel you find the plan that's right for you. Ensure you
+                        and your loved one are protected.
+                    </p>
+                    <a href="#">VIEW PLANS</a>
+
+                    <img src="./images/bg-pattern-intro-left-mobile.svg " alt="" class="pattern_mobile mobile_left" />
+                    <img src="./images/bg-pattern-intro-right-mobile.svg " alt="" class="pattern_mobile mobile_right" />
+                </div>
+
+
+                <picture>
+                    <source media="(max-width: 387px)" srcset="./images/image-intro-mobile.jpg">
+                    <source media="(min-width: 388px)" srcset="./images/image-intro-desktop.jpg">
+                    <img src="./images/image-intro-desktop.jpg" alt="Happy" class="intro">
+                </picture>
+
+            </div>
+
+
+        </section>
+
+        <!-------------------------------------------------------------------------------->
+
+        <section class="different">
+
+            <div class="container container_different ">
+                <span class="span"></span>
+                <h2>We're different</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <img src="./images/icon-snappy-process.svg" alt="1">
+                        <h3>Snappy Process</h3>
+                        <p>
+                            Our application process can be completed in minutes,
+                            not hours. Don't get stuck filling in tedious forms.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/icon-affordable-prices.svg" alt="1">
+                        <h3>Affordable Prices</h3>
+                        <p>
+                            We don't want you worrying about high monthly costs.
+                            Our prices may be low, but we still offer the best coverage possible.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/icon-people-first.svg" alt="1">
+                        <h3>People First</h3>
+                        <p>
+                            Our plans aren't full od conditions and clauses to prevent payouts.
+                            We make sure you're covered when you need it.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------------------------------------------->
+
+        <section class="findout container">
+
+
+            <div>
+                <h2>Find out more about how we work</h2>
+                <a href="">
+                    HOW WE WORK
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-------------------------------------------------------------------------------->
+
+    <footer class="footer container">
+
+        <div class="social">
+            <img src="./images/logo.svg" alt="Logo" />
+            <ul>
+                <li>
+                    <i class="fa fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fa fa-pinterest"></i>
+                </li>
+                <li>
+                    <i class="fa fa-instagram"></i>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="links">
+            <div>
+                <h3>
+                    our company
+                </h3>
+                <a href="#">how we work</a>
+                <a href="#">why insure?</a>
+                <a href="#">view plans</a>
+                <a href="#">Reviews</a>
+            </div>
+            <div>
+                <h3>
+                    help me
+                </h3>
+                <a href="#">faq</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+                <a href="#">cookies</a>
+            </div>
+
+            <div>
+                <h3>
+                    contact
+                </h3>
+                <a href="#">sales</a>
+                <a href="#">support</a>
+                <a href="#">live chat</a>
+            </div>
+
+            <div>
+                <h3>
+                    others
+                </h3>
+                <a href="#">career </a>
+                <a href="#">press</a>
+                <a href="#">licenses</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-------------------------------------------------------------------------------->
+
+    <script>
+        let toggle = false
+        function navToggle() {
+            toggle = !toggle
+            document.getElementById('ul').classList.toggle('nav_open')
+            document.getElementById('toggle').textContent = !toggle ? '☰' : '✖'
+            document.getElementById('toggle').style.backgroundColor = !toggle ? 'var(--white)' : 'gray'
+            document.getElementById('toggle').style.color = !toggle ? 'black' : 'white'
+        }
+    </script>
+
+</body>
+
+</html>
