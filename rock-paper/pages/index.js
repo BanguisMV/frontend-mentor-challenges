@@ -106,7 +106,12 @@ export default function Home() {
     }}>Reset</button>
 
      <button className='rules_button' onClick={() => setModal(prev => !prev)}>Rules</button>
-    
+
+    <p class="attribution" style={{textAlign:'center', fontSize:'1.3rem', color:'white', padding:'1rem'}}>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" style={{color:'#1F3756'}}>Frontend Mentor</a>.
+        Coded by <a href="https://github.com/BanguisMV" style={{color:'#1F3756'}} >BanguisMV</a>.
+    </p>
+
     <AnimatePresence>
     { modal &&  <Rules setModal={setModal} />  }
     </AnimatePresence>
