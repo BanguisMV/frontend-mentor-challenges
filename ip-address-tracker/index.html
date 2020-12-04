@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <title>IP Adress Tracker </title>
+</head>
+<body>
+    <div class="container">
+
+            <div class="banner">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for any IP address">
+                    <input type="image" name="submit" src="images/icon-arrow.svg" border="0" alt="Submit"/>
+
+                </form>
+                <div class="row">
+                <div>
+                    <div class="data-name">IP Address</div>
+                    <div class="data-info" id="ip-address"></div>
+                </div>
+                <div>
+                    <div class="data-name">Location</div>
+                    <div class="data-info" id="location"></div>
+                </div>
+                <div>
+                    <div class="data-name">Timezone</div>
+                    <div class="data-info" id="timezone"></div>
+                </div>
+                <div>
+                    <div class="data-name">ISP</div>
+                    <div class="data-info" id="isp"></div>
+                </div>
+                </div>
+            </div>
+
+
+        <div id="map"></div>
+
+
+
+        <p class="attribution" style='text-align: center; font-size: 1.2rem; padding: 1.5rem;'>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" style='color:#1F3756' >Frontend Mentor</a>.
+            Coded by <a href="https://github.com/BanguisMV" style='color:#1F3756' >BanguisMV</a>.
+        </p>
+
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
