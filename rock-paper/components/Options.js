@@ -6,7 +6,7 @@ const Options = ({ setGame }) => {
         <motion.div 
         initial={{ opacity: 0, rotateZ: 360, scale:0 }}
         animate={{ opacity: 1, rotateZ:0, scale:1 }}
-        transition={{ delay: 0.5, duration: 0.7 }}
+        transition={{ duration: 0.7 }}
         exit={{ opacity: 0, rotateZ: 360, scale:0 }}
         className='gameOptions' 
         >
