@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { AnimatePresence } from "framer-motion"
+import Head from 'next/head'
 
 import Rules from '../components/Rules'
 import ScoreBoard from '../components/ScoreBoard';
@@ -72,6 +73,11 @@ export default function Home() {
 
   return (
     <div className='App'>
+        <Head>
+        <title> Rock - Paper - Scissor </title>
+        <link rel="shortcut icon" href="./logo.svg" type="image/x-icon" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <ScoreBoard currentScore={currentScore}/>
 
       <AnimatePresence>
@@ -89,6 +95,15 @@ export default function Home() {
                                   draw={draw}
                                   />}
     </AnimatePresence>
+
+    <button className='reset_button ' onClick={() =>  {
+      
+      setWin(false)
+      setDraw(false)
+      setPlayerChoice('')
+      setStart(false)
+      setCurrentScore(0)
+    }}>Reset</button>
 
      <button className='rules_button' onClick={() => setModal(prev => !prev)}>Rules</button>
     

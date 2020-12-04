@@ -18,7 +18,7 @@ const Picked = ({iconChoice, iconHouse, houseChoice, playerChoice,  win, setStar
                   className={'a '}
                >
                    <h1>You picked</h1>
-                   <div className={"option picked "+ playerChoice}>
+                   <div className={"option picked "+ playerChoice +" "+ ( win && 'heartbeat') }>
                         <span>
                             <img src={iconChoice} alt="rock" />
                         </span>
@@ -31,8 +31,8 @@ const Picked = ({iconChoice, iconHouse, houseChoice, playerChoice,  win, setStar
                       transition={{ delay: 3 }}
                >
 
-                   {draw ? <h1>DRAW</h1> : 
-                   <h1>{ win ? "YOU WIN" : "YOU LOSE"}</h1> 
+                   {draw ? <h1 className='message'>DRAW</h1> : 
+                   <h1 className='message'>{ win ? "YOU WIN" : "YOU LOSE"}</h1> 
                    }
                    <span onClick={() => setStart(false) }>PLAY AGAIN</span>
                </motion.div>
@@ -43,7 +43,7 @@ const Picked = ({iconChoice, iconHouse, houseChoice, playerChoice,  win, setStar
                    transition={{ delay: 1.5 }}
                >
                    <h1>The House Picked</h1>
-                   <div className={"option picked c "+houseChoice}>
+                   <div className={"option picked c "+houseChoice  + " " + (!draw && !win && 'heartbeat')}>
                         <span>
                             <motion.img 
                             src={iconHouse } 
