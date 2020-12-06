@@ -23,15 +23,15 @@ I took some of FrontEndMentors.io free challenges to brush up my HTML CSS JS ski
 - CSS
 - SaSS
 ## [Banking](https://banguismv-banking.netlify.app)
-![Banking Laading Page](https://github.com/BanguisMV/frontend-mentor-challenges/blob/main/preview/Banking.JPG?raw=true)
+![Banking Landing Page](https://github.com/BanguisMV/frontend-mentor-challenges/blob/main/preview/Banking.JPG?raw=true)
 
 - HTML
 - CSS
 - SaSS
 
 
-## [Insure Laading Page](https://banguismv-insure.netlify.app)
-![Insure Laading Page](https://github.com/BanguisMV/frontend-mentor-challenges/blob/main/preview/insure.JPG?raw=true)
+## [Insure Landing Page](https://banguismv-insure.netlify.app)
+![Insure Landing Page](https://github.com/BanguisMV/frontend-mentor-challenges/blob/main/preview/insure.JPG?raw=true)
 
 - HTML
 - CSS
