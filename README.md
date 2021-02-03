@@ -37,3 +37,11 @@ I took some of FrontEndMentors.io free challenges to brush up my HTML CSS JS ski
 - CSS
 - SaSS
 
+## [loopstudios-landing-page](https://loopstudios-landing-page-navy.vercel.app/)
+![loopstudios-landing-page](https://raw.githubusercontent.com/BanguisMV/frontend-mentor-challenges/main/loopstudios-landing-page-main/design/desktop-preview.jpg)
+
+- HTML
+- CSS
+- SaSS
+- JavaScript
+
