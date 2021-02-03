@@ -37,7 +37,16 @@ I took some of FrontEndMentors.io free challenges to brush up my HTML CSS JS ski
 - CSS
 - SaSS
 
-## [loopstudios-landing-page](https://loopstudios-landing-page-navy.vercel.app/)
+## [Huddle Landing Page](https://banguismv-huddle.vercel.app/)
+![Huddle Landing Page](https://github.com/BanguisMV/frontend-mentor-challenges/blob/main/huddle-landing-page-with-curved-sections-master/cde39c20-7a64-4474-868f-4d5a21997641.png?raw=true)
+
+- HTML
+- CSS
+- SaSS
+- JavaScript
+
+
+## [Loopstudios Landing Page](https://loopstudios-landing-page-navy.vercel.app/)
 ![loopstudios-landing-page](https://raw.githubusercontent.com/BanguisMV/frontend-mentor-challenges/main/loopstudios-landing-page-main/design/desktop-preview.jpg)
 
 - HTML
