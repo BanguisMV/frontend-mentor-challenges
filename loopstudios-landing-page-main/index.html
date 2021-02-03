@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div id="navComponent">
+     <div class="row">
+      <img src="/images/logo.svg" alt="LOGO">
+      <span class="trigram" id="menu-button" onclick="Trigger()">✖</span>
+     </div>
+
+     <div class="column">
+        <a href="#">    About     </a>
+        <a href="#">    Careers   </a>
+        <a href="#">    Events    </a>
+        <a href="#">    Products  </a>
+        <a href="#">    Support   </a>
+     </div>
+    </div>
+    <nav>
+      <img src="/images/logo.svg" alt="LOGO" data-entrance='fade'>
+      <div class="links">
+          <a href="#">    About     </a>
+          <a href="#">    Careers   </a>
+          <a href="#">    Events    </a>
+          <a href="#">    Products  </a>
+          <a href="#">    Support   </a>
+      </div>
+      <span class="trigram" id="menu-button" onclick="Trigger()">☰</span>
+    </nav>
+    <h1 data-entrance='fade'>  Immersive <br> experiences <br> that deliver</h1>
+  </header>
+
+  <main>
+    <section class="vr">
+      <img src="./images/desktop/image-interactive.jpg" alt="" data-entrance='fade'>
+
+      <div class="leader" data-entrance='fade'>
+        <h2> The leader in interactive VR </h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </div>
+    </section>
+
+    <section class="creations">
+
+      <div class="row">
+        <h2>OUR CREATIONS</h2>
+        <a href="#" class="cta">S E E &nbsp; A L L</a>
+      </div>
+     
+      <div class="pictures">
+
+        <div class="picture child-1" data-entrance='fade'>
+          <h3> DEEP EARTH </h3>
+        </div>
+        <div class="picture child-2" data-entrance='fade'>
+           <h3> NIGHT ARCADE </h3>
+        </div>
+        <div class="picture child-3" data-entrance='fade'>
+           <h3> SOCCER TEAM VR </h3>
+        </div>
+        <div class="picture child-4" data-entrance='fade'>
+          <h3>  THE GRID </h3>
+        </div>
+        <div class="picture child-5" data-entrance='fade'>
+           <h3> FROM UP ABOVE VR </h3>
+        </div>
+        <div class="picture child-6" data-entrance='fade'>
+           <h3> POCKET BOREALIS </h3>
+        </div>
+        <div class="picture child-7" data-entrance='fade'>
+           <h3> THE CURIOSITY </h3>
+        </div>
+        <div class="picture child-8" data-entrance='fade'>
+           <h3> MAKE IT FISH EYE </h3>
+        </div>
+
+      </div>
+
+       <a href="#" class="cta-mobile">S E E &nbsp; A L L</a>
+      </div>
+  </main>
+
+
+  <footer data-entrance='fade'>
+    <img src="./images/logo.svg" alt="">
+    <div class="row row-1">
+      <a href="">About</a>
+      <a href="">Career</a>
+      <a href="">Events</a>
+      <a href="">Products</a>
+      <a href="">Support</a>
+    </div>
+
+    <div class="row row-2">
+      <i class="gg-facebook"></i>
+      <i class="gg-twitter"></i>
+      <i class="gg-youtube"></i>
+      <i class="gg-instagram"></i>
+    </div>
+
+    <div class="copy">
+      <h3>&copy; 2021 Loopstudios. All rights reserved.</h3>
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/loopstudios-landing-page-O4heVFHJ0" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/BanguisMV" target='_blank'>Mark Vergel Banguis</a>.
+  </div> 
+  <script src="./js/scroll.js"></script>
+
+  <script>
+    const triggerButton = document.getElementById('menu-button')
+    const navComponent = document.getElementById('navComponent')
+    let open = false;
+
+    function Trigger() {
+      open = !open
+
+      if(open) {
+        navComponent.style.display = 'flex'
+        navComponent.classList.add("slide-in-top")
+        navComponent.classList.remove("slide-out-bottom")
+
+      } else {
+        navComponent.classList.add("slide-out-bottom")
+        setTimeout(() =>{
+          navComponent.style.display = 'none'
+        },500)
+
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
